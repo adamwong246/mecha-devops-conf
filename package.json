@@ -4,7 +4,7 @@
   "description": "a test configuration for mechadevops",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "mechaDevOps start"
   },
   "repository": {
     "type": "git",
@@ -18,20 +18,20 @@
   "homepage": "https://github.com/adamwong246/mecha-devops-conf#readme",
   "mecha": {
   "token": "token",
-  "cIDs":
-    {
-      "github.com:adamwong246/testPros.git#master": {
-        "filters" : [
-          { "name": "lint", "cmd": "npm run lint"},
-          { "name": "test", "cmd": "npm run test"}
-        ],
-        "hook": "echo DEPLOY!"
-      },
-      "github.com:adamwong246/dotfiles.git#master": {
-        "filters" : [
-          { "name": "foo", "cmd": "echo foo"}
-        ],
-        "hook": "echo FOO!"
-      }
-    }
+    "cIDs":
+      {
+        "github.com:adamwong246/testPros.git#master": {
+          "filters" : [
+            { "name": "lint", "cmd": "npm run lint"},
+            { "name": "test", "cmd": "npm run test"}
+          ],
+          "hook": "echo DEPLOY!"
+        },
+        "github.com:adamwong246/dotfiles.git#master": {
+          "filters" : [
+            { "name": "foo", "cmd": "echo foo"}
+          ],
+          "hook": "echo FOO!"
+        }
+     }
 }
