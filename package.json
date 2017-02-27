@@ -16,8 +16,7 @@
     "url": "https://github.com/adamwong246/mecha-devops-conf/issues"
   },
   "homepage": "https://github.com/adamwong246/mecha-devops-conf#readme",
-  {
-    "mecha": {
+  "mecha": {
   "token": "token",
   "cIDs":
     {
@@ -35,5 +34,4 @@
         "hook": "echo FOO!"
       }
     }
-}
 }
