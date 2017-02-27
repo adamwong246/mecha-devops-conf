@@ -34,4 +34,8 @@
           "hook": "echo FOO!"
         }
      }
+  },
+  "dependencies": {
+    "mecha-devops": ""
+  }
 }
